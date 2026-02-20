@@ -1,4 +1,5 @@
 using UnityEngine;
+using static PlayerControllerExam06;
 
 public class CameraControlExam06 : MonoBehaviour
 {
@@ -11,8 +12,14 @@ public class CameraControlExam06 : MonoBehaviour
     void LateUpdate()
     {
         Vector3 player1Pos = player1.transform.position;
-        Vector3 player2Pos = player2.transform.position;
+        Vector3 position = player2.transform.position;
+
+
+
 
         // Student code ...
+       Vector3 vector3 = position;  
+       player1Pos = player1.transform.position;
+
     }
 }

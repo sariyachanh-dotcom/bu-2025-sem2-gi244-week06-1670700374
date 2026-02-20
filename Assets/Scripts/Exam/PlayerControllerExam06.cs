@@ -35,5 +35,7 @@ public class PlayerControllerExam06 : MonoBehaviour
         {
             transform.Translate(verticalInput * speed * Time.deltaTime * Vector3.forward);
         }
+
     }
+    
 }
