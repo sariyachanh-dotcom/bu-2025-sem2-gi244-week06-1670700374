@@ -7,7 +7,13 @@ public class PlayerControllerExam03 : MonoBehaviour
     public float xRange = 10;
     public GameObject projectilePrefab;
 
-    public bool enableAutoFireMode;
+    public bool AutoFireMode;
+
+    public PlayerControllerExam03(bool AutoFireMode)
+    {
+        AutoFireMode = AutoFireMode;
+    }
+
     public float autoFireInterval = 0.1f;
 
     private float horizontalInput;

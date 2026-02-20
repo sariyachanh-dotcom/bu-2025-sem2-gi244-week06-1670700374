@@ -9,10 +9,12 @@ public class WaveSpawnManagerExam04 : MonoBehaviour
 
     private int currentWave = 0;
     private float waveEndTime = 0f;
+   
 
     void Start()
     {
         waveController.StartWave(waveConfigurations[currentWave]);
+        waveEndTime = Time.time + waveConfigurations[currentWave].waveInterval;
     }
 
     void Update()

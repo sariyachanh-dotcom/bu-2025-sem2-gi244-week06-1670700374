@@ -11,7 +11,21 @@ public class PlayerControllerExam05 : MonoBehaviour
     // Exam 05 ...
     public int maxBulletCount = 10;
     public float bulletRegenerateCooldown = 1f;
+
+    public PlayerControllerExam05(float bulletRegenerateCooldown)
+    {
+        this.bulletRegenerateCooldown = bulletRegenerateCooldown;
+    }
+
+    public PlayerControllerExam05(int maxBulletCount)
+    {
+        maxBulletCount = 10;
+    }
+
+  
+
     // ...
+
 
     private float horizontalInput;
     private InputAction moveAction;
